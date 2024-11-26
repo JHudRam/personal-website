@@ -1,0 +1,134 @@
+/* Occipital Lobe Specific Styles */
+
+.film-section {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.film-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+.film-image {
+    flex: 1;
+    max-width: 450px;
+}
+
+.film-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.film-content {
+    flex: 1;
+    max-width: 450px;
+}
+
+.film-number {
+    color: var(--accent-warm);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.film-title {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.film-quote {
+    color: var(--primary-light);
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid var(--accent-gold);
+}
+
+/* Center the entire case study content */
+.case-study-content {
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .film-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .film-image {
+        max-width: 100%;
+    }
+}/* Occipital Lobe Specific Styles */
+
+/* Film List Styling */
+.film-section {
+    padding: 40px 0;
+}
+
+.film-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.film-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.film-image img {
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.film-content {
+    flex: 1;
+}
+
+.film-number {
+    color: var(--accent-warm);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.film-title {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.film-quote {
+    color: var(--primary-light);
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid var(--accent-gold);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .film-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .film-image {
+        max-width: 100%;
+    }
+}

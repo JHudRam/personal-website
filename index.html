@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="intro-section">
+                <h1>Hi! I'm Jacob Ramos.</h1>
+                <div class="typewriter-container">
+                    <span class="static-text">I am a </span>
+                    <span class="typewriter" id="typewriter"></span>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <nav class="professional-links">
+                    <a href="https://www.linkedin.com/in/jhram" class="prof-link">LinkedIn</a>
+                    <a href="assets/links/brainresume.pdf" class="prof-link">Resume</a>
+                    <a href="https://github.com/JHudRam" class="prof-link">GitHub</a>
+                </nav>
+                <div class="instruction-text">
+                    Navigate through my brain to discover how I've utilized different cognitive areas in my professional journey.
+                </div>
+            </div>
+        </header>
+
+        <!-- Brain Section -->
+        <div class="brain-container">
+        
+            <div class="quote-ticker-container">
+                <div class="quote-ticker">
+                    <div class="ticker-content">
+                        <!-- Duplicate quotes to create seamless loop -->
+                        <span class="ticker-item">"There is nothing in the desert and no man needs nothing." —Prince Feisal</span>
+                        <span class="ticker-item">"Everything around you that you call life was made up by people that were no smarter than you." —Steve Jobs</span>
+                        <span class="ticker-item">"Hardness in the body, sharpness in your mind, softness in your heart." —Sadhguru</span>
+                        <span class="ticker-item">"Any sufficiently advanced technology is indistinguishable from magic." —Arthur C. Clarke</span>
+                        <span class="ticker-item">"The only true wisdom is in knowing you know nothing." —Socrates</span>
+                        <span class="ticker-item">"Innovation is seeing what everybody has seen and thinking what nobody has thought." —Albert Szent-Györgyi</span>
+                        <!-- Duplicate set for smooth looping -->
+                        <span class="ticker-item">"There is nothing in the desert and no man needs nothing." —Prince Feisal</span>
+                        <span class="ticker-item">"Everything around you that you call life was made up by people that were no smarter than you." —Steve Jobs</span>
+                        <span class="ticker-item">"Hardness in the body, sharpness in your mind, softness in your heart." —Sadhguru</span>
+                        <span class="ticker-item">"Any sufficiently advanced technology is indistinguishable from magic." —Arthur C. Clarke</span>
+                        <span class="ticker-item">"The only true wisdom is in knowing you know nothing." —Socrates</span>
+                        <span class="ticker-item">"Innovation is seeing what everybody has seen and thinking what nobody has thought." —Albert Szent-Györgyi</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Brain Image -->
+            <div class="brain-image-container">
+                <img src="assets/images/brain-side-view.png" 
+                     alt="Brain Diagram" 
+                     usemap="#brain-map"
+                     class="brain-image"
+                     id="brain-image">
+
+                <map name="brain-map">
+                    <area shape="circle" 
+                          coords="40,400,40" 
+                          data-region="frontal" 
+                          alt="Frontal Lobe"
+                          class="brain-area"
+                          title="Explore Creative Thinking & Innovation">
+                    
+                    <area shape="circle" 
+                          coords="450,253,40" 
+                          data-region="parietal" 
+                          alt="Parietal Lobe"
+                          class="brain-area"
+                          title="Discover Spatial Problem Solving">
+                          
+                    <area shape="circle" 
+                          coords="800,476,40" 
+                          data-region="occipital" 
+                          alt="Occipital Lobe"
+                          class="brain-area"
+                          title="See Visual Design & Processing">
+                          
+                    <area shape="circle" 
+                          coords="720,700,40" 
+                          data-region="cerebellum" 
+                          alt="Cerebellum"
+                          class="brain-area"
+                          title="Experience Coordination & Skills">
+                          
+                    <area shape="circle" 
+                          coords="220,742,40" 
+                          data-region="temporal" 
+                          alt="Temporal Lobe"
+                          class="brain-area"
+                          title="Explore Memory & Learning">
+
+                </map>
+
+                <div id="hover-indicator" class="hover-indicator"></div>
+
+                <div class="brain-labels">
+                    <div class="brain-label" data-region="frontal" style="left: 40px; top: 400px;">
+                        Frontal Lobe<br>
+                        <span class="function">Creative Thinking & Executive Function</span><br>
+                        <span class="content">Problem-Solving Portfolio</span>
+                    </div>
+                    
+                    <div class="brain-label" data-region="parietal" style="left: 450px; top: 253px;">
+                        Parietal Lobe<br>
+                        <span class="function">Complex Information Processing</span><br>
+                        <span class="content">Technical Skillset</span>
+                    </div>
+                    
+                    <div class="brain-label" data-region="temporal" style="left: 220px; top: 742px;">
+                        Temporal Lobe<br>
+                        <span class="function">Learning & Memory Formation</span><br>
+                        <span class="content">Educational Journey</span>
+                    </div>
+                    
+                    <div class="brain-label" data-region="occipital" style="left: 800px; top: 476px;">
+                        Occipital Lobe<br>
+                        <span class="function">Visual Processing</span><br>
+                        <span class="content">Favorite Movies</span>
+                    </div>
+                    
+                    <div class="brain-label" data-region="cerebellum" style="left: 720px; top: 700px;">
+                        Cerebellum<br>
+                        <span class="function">Coordination & Precision</span><br>
+                        <span class="content">Operational Expertise</span>
+                    </div>
+                </div>
+
+        <!-- Footer -->
+        <!-- In your HTML, replace the current footer with: -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-item">Made by Jake Ramos</div>
+                <div class="footer-item">Brain Illustration: Lucza Brewer</div>
+                <div class="footer-item">Version 1.0 • November 2024</div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

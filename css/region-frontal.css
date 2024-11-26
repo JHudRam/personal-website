@@ -1,0 +1,21 @@
+/* Frontal Lobe Specific Styles */
+
+/* Case Study Customization */
+.case-study-content {
+    padding-bottom: 40px; /* Additional padding for Frontal case studies */
+}
+
+/* Impact Section Specific Styling */
+.impact-section li {
+    margin-bottom: 15px; /* Specific spacing for impact lists in Frontal */
+}
+
+/* Bruin AI Section */
+.bruin-ai-section img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Akatosh Section */
+.akatosh-section img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

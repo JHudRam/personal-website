@@ -1,0 +1,115 @@
+.operations-container {
+    display: grid;
+    grid-template-columns: 400px 500px;
+    gap: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    justify-content: center;
+}
+
+.operations-image {
+    width: auto; /* Changed from fixed width */
+    height: auto; /* Changed from fixed height */
+    justify-self: end;
+}
+
+.operations-image img {
+    width: 400px; /* Set width directly on image */
+    height: auto; /* Let height adjust automatically */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block; /* Removes any extra space */
+}
+
+.operations-content {
+    width: 500px;
+    justify-self: start;
+    padding-top: 40px; /* Add some padding to align with image */
+}
+
+.operations-title {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 0; /* Remove any top margin */
+}
+
+.operations-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0; /* Remove any top margin */
+}/* Cerebellum Specific Styles */
+.operations-container {
+    display: grid;
+    grid-template-columns: 400px 500px;
+    gap: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+.operations-image {
+    width: 400px;
+    height: 600px;
+    justify-self: end;
+}
+
+.operations-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.operations-content {
+    width: 500px;
+    justify-self: start;
+    padding-top: 120px;  /* Change this number to move text down */
+}
+
+.operations-title {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.operations-list {
+    list-style: none;
+    padding: 0;
+}
+
+.operations-list li {
+    color: var(--primary-light);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.operations-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}
+
+/* Nested lists */
+.operations-list ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

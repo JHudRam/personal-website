@@ -1,0 +1,66 @@
+/* Temporal Lobe Specific Styles */
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 400px 500px; /* Fixed widths for image and content */
+    gap: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+.education-image {
+    width: 400px;
+    height: 600px;
+    justify-self: end; /* Aligns all images to the right of their space */
+}
+
+.education-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.education-content {
+    width: 500px;
+    justify-self: start; /* Aligns all content to the left of their space */
+}
+
+.education-title {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    color: var(--primary-light);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.education-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}

@@ -1,0 +1,395 @@
+/* Color Variables */
+:root {
+    --primary-dark: #2D2522;    /* Deep espresso - background */
+    --primary-light: #F5E6D3;   /* Soft cream - text */
+    --accent-warm: #A67C52;     /* Rich caramel - highlights */
+    --accent-gold: #BF9B6F;     /* Burnished gold - interactive elements */
+    --accent-subtle: #8C7355;   /* Muted bronze - secondary elements */
+    --hover-light: #E6CCB3;     /* Light caramel - hover states */
+    --hover-dark: #594D45;      /* Deep umber - dark hover states */
+}
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-family: 'Arial', sans-serif;
+    min-height: 100%;
+    overflow-y: auto; /* Changed from hidden to auto */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 15px 0 15px;
+    position: relative;
+    /* Removed min-height and overflow: hidden */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0 15px 0;
+    margin-bottom: 0;
+}
+
+.intro-section h1 {
+    font-size: 2.2rem;
+    color: var(--accent-gold);
+    margin: 0;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: text-shadow 0.3s ease;
+}
+
+.intro-section h1:hover {
+    text-shadow: 0 4px 8px rgba(166, 124, 82, 0.3);
+}
+
+.typewriter-container {
+    font-size: 1.4rem;
+    color: var(--primary-light);
+}
+
+.typewriter {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, var(--accent-warm) 0%, var(--accent-gold) 100%);
+    font-weight: 500;
+    padding-right: 5px;
+    border-right: 2px solid var(--accent-gold);
+    animation: blink 0.7s infinite;
+}
+
+/* Right Section Styles */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.professional-links {
+    display: flex;
+    gap: 20px;
+}
+
+.prof-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid var(--accent-gold);
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    z-index: 1;
+}
+
+.prof-link:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: var(--accent-gold);
+    transform: translate(-150%, -50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.prof-link:hover {
+    color: var(--primary-dark);
+}
+
+.prof-link:hover:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.instruction-text {
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+    text-align: right;
+    max-width: 250px;
+    line-height: 1.4;
+    padding: 10px;
+    border-top: 1px solid rgba(212, 180, 131, 0.2);
+    margin-top: 5px;
+}
+
+/* Brain Container */
+.brain-container {
+    position: relative;
+    margin-top: -20px;
+    padding-top: 0;
+}
+
+.brain-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: -315px auto 0 auto; /* Move entire brain up and down OG -280 */
+    padding-top: 0;
+}
+
+.brain-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+/* Brain Labels */
+.brain-labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.brain-label {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 12px;
+    border-radius: 4px;
+    background: linear-gradient(
+        135deg,
+        rgba(45, 37, 34, 0.9) 0%,
+        rgba(45, 37, 34, 0.95) 100%
+    );
+    border: 1px solid rgba(166, 124, 82, 0.3);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    min-width: 200px;
+}
+
+/* Label Text Styles */
+.brain-label .function {
+    font-size: 0.8em;
+    color: var(--accent-gold);
+    opacity: 0.8;
+}
+
+.brain-label .content {
+    font-size: 0.85em;
+    color: var(--hover-light);
+    font-style: italic;
+}
+
+/* Hover Effects */
+.brain-area:hover + #hover-indicator + .brain-labels .brain-label {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: linear-gradient(
+        135deg,
+        rgba(166, 124, 82, 0.2) 0%,
+        rgba(166, 124, 82, 0.3) 100%
+    );
+    border: 1px solid rgba(212, 180, 131, 0.5);
+    box-shadow: 0 0 30px rgba(212, 180, 131, 0.3);
+    transition: all 0.2s ease;
+}
+
+.brain-area:hover + #hover-indicator {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Quote Ticker Styles */
+.quote-ticker-container {
+    position: absolute;
+    top: 805px; /*move quote container up and down OG 780 */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(45, 37, 34, 0.9) 0%,
+        rgba(45, 37, 34, 0.95) 100%
+    );
+    border-top: 1px solid rgba(166, 124, 82, 0.2);
+    border-bottom: 1px solid rgba(166, 124, 82, 0.2);
+    overflow: hidden;
+    height: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote-ticker {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.ticker-content {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: ticker 60s linear infinite;
+    padding: 0 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+    color: var(--accent-gold);
+    font-size: 0.95rem;
+    position: relative;
+    height: 100%;
+}
+
+.ticker-item::after {
+    content: '•';
+    position: absolute;
+    right: 10px;
+    color: var(--accent-warm);
+    opacity: 0.5;
+}
+
+.ticker-item:last-child::after {
+    content: none;
+}
+
+/* Quote Ticker Gradients */
+.quote-ticker-container::before,
+.quote-ticker-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
+.quote-ticker-container::before {
+    left: 0;
+    background: linear-gradient(
+        90deg,
+        var(--primary-dark) 0%,
+        transparent 100%
+    );
+}
+
+.quote-ticker-container::after {
+    right: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--primary-dark) 100%
+    );
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 140px; /* Move footer up and down OG 175 */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(
+        90deg,
+        rgba(45, 37, 34, 0.9) 0%,
+        rgba(45, 37, 34, 0.95) 100%
+    );
+    border-top: 1px solid rgba(166, 124, 82, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-item {
+    padding: 0 15px;
+}
+
+.footer:hover {
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.4; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .brain-image-container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .intro-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .typewriter-container {
+        font-size: 1.2rem;
+    }
+
+    .professional-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .prof-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Quote Ticker Pause on Hover */
+.quote-ticker:hover .ticker-content {
+    animation-play-state: paused;
+}

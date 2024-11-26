@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontal Lobe - Problem Solving</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/region-common.css">
+    <link rel="stylesheet" href="../css/region-frontal.css">
+</head>
+<!-- Rest of the HTML remains the same -->
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navigation">
+        <a href="../index.html" class="back-button">← Back to Brain Explorer</a>
+        <div class="region-header">
+            <h1>Frontal Lobe: Creative Thinking & Executive Function</h1>
+            <p class="subtitle">Problem-Solving Portfolio</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="case-studies">
+        <!-- Bruin AI Case Study -->
+        <section class="case-study">
+            <div class="case-study-content">
+                <div class="case-study-image">
+                    <img src="../assets/images/bruin-ai-placeholder.png" alt="Bruin AI Initiative">
+                </div>
+                <div class="case-study-text">
+                    <h2>Bruin AI </h2>
+                    <div class="problem-section">
+                        <h3>Problem</h3>
+                        <p>UCLA lacked a dedicated AI community, leaving students without structured opportunities to learn and engage with artificial intelligence technologies.</p>
+                    </div>
+                    <div class="solution-section">
+                        <h3>Solution</h3>
+                        <p>Founded Bruin AI, a comprehensive platform offering education, project experience, and industry networking opportunities to UCLA students.</p>
+                    </div>
+                    <div class="impact-section">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Grew to 65+ active members and 1500 Substack subscribers</li>
+                            <li>Partnerships/Projects (Cisco, Humane, UpSkill, Actuals, GumGum)</li>
+                            <li>Hosted a 400+ person AI conference</li>
+                            <li>Established on-campus lectures and workshops on generative AI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Akatosh Case Study -->
+        <section class="case-study">
+            <div class="case-study-content reverse">
+                <div class="case-study-image">
+                    <img src="../assets/images/akatosh-placeholder.png" alt="Akatosh Travel Platform">
+                </div>
+                <div class="case-study-text">
+                    <h2>Akatosh Travel App</h2>
+                    <div class="problem-section">
+                        <h3>Problem</h3>
+                        <p>Travelers rely heavily on impersonal reviews, missing authentic recommendations from trusted friends and real travelers.</p>
+                    </div>
+                    <div class="solution-section">
+                        <h3>Solution</h3>
+                        <p>Developed Akatosh, a social travel platform connecting friends through interactive mapping and AI-powered recommendations.</p>
+                    </div>
+                    <div class="impact-section">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Won 1st Place at Bruin Entrepreneurs pitch competition</li>
+                            <li>Created prototype in Figma</li>
+                            <li>Validated concept through user testing and feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- You can add more case studies following the same pattern -->
+        
+    </main>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelector('.back-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = this.href;
+        });
+
+        // Optional: Add scroll reveal animation
+        window.addEventListener('scroll', function() {
+            const caseStudies = document.querySelectorAll('.case-study');
+            caseStudies.forEach(study => {
+                const rect = study.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.75 && rect.bottom > 0) {
+                    study.style.opacity = '1';
+                    study.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item">Made by Jake Ramos</div>
+            <div class="footer-item">Brain Illustration: Lucza Brewer</div>
+            <div class="footer-item">Version 1.0 • November 2024</div>
+        </div>
+    </footer>
+</script>
+</body>
+</html>

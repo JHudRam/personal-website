@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occipital Lobe - Visual Processing</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/region-common.css">
+    <link rel="stylesheet" href="../css/region-occipital.css">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navigation">
+        <a href="../index.html" class="back-button">← Back to Brain Explorer</a>
+        <div class="region-header">
+            <h1>Occipital Lobe: Visual Processing</h1>
+            <p class="subtitle">Favorite Movies</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="case-studies">
+        <section class="case-study">
+            <div class="case-study-content">
+                <div class="film-section">
+                    <!-- Film 5 -->
+                    <div class="film-container">
+                        <div class="film-image">
+                            <img src="../assets/images/blader.png" alt="Blade Runner 2049">
+                        </div>
+                        <div class="film-content">
+                            <div class="film-number">5</div>
+                            <h2 class="film-title">Blade Runner 2049</h2>
+                            <p class="film-quote">"Dying for the right cause, is the most human thing you can do"</p>
+                        </div>
+                    </div>
+
+                    <div class="film-container">
+                        <div class="film-image">
+                            <img src="../assets/images/nacho.png" alt="Nacho Libre">
+                        </div>
+                        <div class="film-content">
+                            <div class="film-number">4</div>
+                            <h2 class="film-title">Nacho Libre</h2>
+                            <p class="film-quote">"I don't believe in God. I believe in Science"</p>
+                        </div>
+                    </div>
+
+                    <div class="film-container">
+                        <div class="film-image">
+                            <img src="../assets/images/an.png" alt="Apocalypse Now">
+                        </div>
+                        <div class="film-content">
+                            <div class="film-number">3</div>
+                            <h2 class="film-title">Apocalypse Now</h2>
+                            <p class="film-quote">"Never get out of the boat"</p>
+                        </div>
+                    </div>
+
+                    <div class="film-container">
+                        <div class="film-image">
+                            <img src="../assets/images/2001.png" alt="2001: A Space Odyssey">
+                        </div>
+                        <div class="film-content">
+                            <div class="film-number">2</div>
+                            <h2 class="film-title">2001: A Space Odyssey</h2>
+                            <p class="film-quote">"I'm sorry Dave, I am afraid I can't do that"</p>
+                        </div>
+                    </div>
+
+                    <div class="film-container">
+                        <div class="film-image">
+                            <img src="../assets/images/dune.png" alt="Dune Part 2">
+                        </div>
+                        <div class="film-content">
+                            <div class="film-number">1</div>
+                            <h2 class="film-title">Dune Part 2</h2>
+                            <p class="film-quote">"I must not fear, fear is the mind killer"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.back-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = this.href;
+        });
+    </script>
+</body>
+</html>

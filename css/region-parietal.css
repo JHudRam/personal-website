@@ -1,0 +1,60 @@
+/* Parietal Lobe Specific Styles */
+
+/* Additional Skills Section */
+.additional-skills {
+    text-align: center;
+    padding: 20px 0;  /* Reduced padding to move it up */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.additional-skills h2 {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.skill-item {
+    color: var(--primary-light);
+    background: rgba(166, 124, 82, 0.1);
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid var(--accent-subtle);
+    font-size: 1.1rem;
+    /* Removed transition and hover effects */
+}
+
+.inline-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+    color: var(--accent-warm);
+    border-bottom-color: var(--accent-warm);
+}
+
+/* Project Specific Styles */
+.notion-section img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 400px !important;
+    height: 600px !important;
+    object-fit: contain;
+}
+
+.programming-section img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 400px !important;
+    height: 600px !important;
+    object-fit: contain;
+}
